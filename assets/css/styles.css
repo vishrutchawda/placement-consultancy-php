@@ -1,0 +1,200 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #32cd32, #00ffff, #3b82f6, #ff7f50, #ff69b4);
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+
+
+.card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #60a5fa;
+    border-color: #60a5fa;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+    transform: scale(1.05);
+}
+
+.btn-success {
+    background-color: #34d399;
+    border-color: #34d399;
+}
+
+.btn-success:hover {
+    background-color: #10b981;
+    transform: scale(1.05);
+}
+
+.btn-danger {
+    background-color: #fb923c;
+    border-color: #fb923c;
+}
+
+.btn-danger:hover {
+    background-color: #f97316;
+    transform: scale(1.05);
+}
+
+
+.btn-info {
+    background-color: #93c5fd;
+    border-color: #93c5fd;
+}
+
+.btn-info:hover {
+    background-color: #60a5fa;
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background-color: #6b7280;
+    border-color: #6b7280;
+}
+
+.btn-secondary:hover {
+    background-color: #4b5563;
+    transform: scale(1.05);
+}
+
+.table {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #60a5fa;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+.form-control, .form-select {
+    border-color: #d1d5db;
+    border-radius: 8px;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.2);
+}
+
+.input-group-text {
+    background-color: #f3f4f6;
+    border-color: #d1d5db;
+    border-radius: 8px 0 0 8px;
+}
+
+.btn img, .input-group-text img, h2 img, h3 img {
+    height: 22px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.toast-container {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1050;
+}
+
+.toast {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.toast.bg-success {
+    background-color: #34d399 !important;
+}
+
+.toast.bg-danger {
+    background-color: #fb923c !important;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    margin-bottom: 1rem;
+}
+
+.breadcrumb-item a {
+    color: #60a5fa;
+}
+
+.breadcrumb-item.active {
+    color: #111827;
+}
+
+h2 {
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3b82f6;
+}
+
+@media (max-width: 576px) {
+    .navbar-brand img {
+        height: 32px;
+    }
+    .navbar-nav img, .btn img, .input-group-text img, h2 img, h3 img {
+        height: 20px;
+    }
+    .btn {
+        padding: 0.5rem 1rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+    }
+}
